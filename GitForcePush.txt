@@ -1,0 +1,40 @@
+To force the merge of unrelated histories, you can use the --allow-unrelated-histories flag:
+
+bash
+
+git merge origin/main --allow-unrelated-histories
+
+Here's the complete sequence of commands you should run:
+
+    Add the remote origin (if you haven't already):
+
+    bash
+
+git remote add origin https://github.com/Visweshvar-Axel/Library-Management-System.git
+
+Fetch the latest changes from the remote repository:
+
+bash
+
+git fetch origin
+
+Merge the fetched changes with the --allow-unrelated-histories flag:
+
+bash
+
+git merge origin/main --allow-unrelated-histories
+
+Resolve any merge conflicts, if they arise. After resolving, add and commit the changes:
+
+bash
+
+git add <file_with_conflicts>
+git commit
+
+Push your changes to the remote repository:
+
+bash
+
+    git push origin main
+
+By using the --allow-unrelated-histories flag, you can force Git to merge the two separate histories, allowing you to successfully integrate the changes from the remote repository into your local repository. After resolving any conflicts and committing the merge, you should be able to push your changes to the remote repository.
